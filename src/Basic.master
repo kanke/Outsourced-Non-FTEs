@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Basic.master.cs" Inherits="Basic" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>LOG IN Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/Nigeria_Header.jpg" />
+        <br />
+        <table style="width:100%;">
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td align="center">
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <%--<asp:Image runat="server" ImageUrl="~/images/footer.png" />--%>
+        </asp:ContentPlaceHolder>
+        
+        
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+          <div id="footer">
+
+              <img alt="" src="images/footer.png" style="width: 975px; height: 20px" /></div>
+    </form>
+</body>
+</html>

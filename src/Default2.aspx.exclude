@@ -1,0 +1,55 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default2.aspx.cs" Inherits="Default2" %>
+
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
+<%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
+<%@ Register assembly="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" namespace="CrystalDecisions.Web" tagprefix="CR" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <asp:Wizard ID="Wizard1" runat="server">
+            <WizardSteps>
+                <asp:WizardStep runat="server" title="Step 1">
+                </asp:WizardStep>
+                <asp:WizardStep runat="server" title="Step 2">
+                </asp:WizardStep>
+            </WizardSteps>
+            <HeaderTemplate>
+                <br />
+                <br />
+            </HeaderTemplate>
+        </asp:Wizard>
+        <p>
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <cc1:ReorderList ID="ReorderList1" runat="server">
+            </cc1:ReorderList>
+        </p>
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+        </asp:SiteMapPath>
+    
+        <br />
+        <br />
+        <textarea id="TextArea1" cols="20" name="S1" rows="2"></textarea><img alt="" 
+            src="" /><select id="Select1" name="D1">
+            <option></option>
+        </select><div>
+        </div>
+        <input id="Hidden3" type="hidden" />
+        <br />
+        <select id="Select2" name="D2">
+            <option></option>
+        </select><input id="Hidden2" type="hidden" /><br />
+        <input id="Hidden1" type="hidden" />
+    
+    </div>
+    </form>
+</body>
+</html>

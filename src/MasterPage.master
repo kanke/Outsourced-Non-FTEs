@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 137px;
+        }
+        #footer
+        {
+            width: 1051px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <br />
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/Nigeria_Header.jpg" 
+            Width="1051px" />
+    </div>
+    <table class="style1">
+        <tr>
+            <td rowspan="3" class="style2">
+                <br />
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/add.aspx">New 
+                Non-FTE</asp:HyperLink>
+                <br />
+                <br />
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/view.aspx">View all 
+                Reports</asp:HyperLink>
+                <br />
+                <br />
+                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="lookup.aspx">Look up 
+                Page</asp:HyperLink>
+                <br />
+                <br />
+                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="user.aspx">Add New 
+                User</asp:HyperLink>
+                <br />
+                <br />
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="Logout.aspx">Log Out</asp:HyperLink>
+            </td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+              <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:ScriptManager ID="ScriptManager1" runat="server">
+                </asp:ScriptManager>
+            </td>
+        </tr>
+    </table>
+    <div id="footer">
+
+              <img alt="" src="images/footer.png" style="width: 1065px; height: 20px" /></div>
+    </form>
+</body>
+</html>
